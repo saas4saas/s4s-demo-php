@@ -1,0 +1,14 @@
+{
+    "name": "s4s-php/demo",
+    "description": "A demonstration of the usage of Saas4saaS with php, and the php client",
+    "license": "Apache2",
+    "authors": [
+        {
+            "name": "Rui P Oliveira",
+            "email": "rui.p.oliveira@impactinglabs.com"
+        }
+    ],
+    "require": {
+        "saas4saas/s4s-full": "v0.1.2"
+    }
+}

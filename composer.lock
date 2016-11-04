@@ -1,0 +1,69 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "This file is @generated automatically"
+    ],
+    "hash": "373f59a3ce3aa467bbd98b886a0948dc",
+    "content-hash": "5d50c8cb8ebc516417d733e6df779623",
+    "packages": [
+        {
+            "name": "saas4saas/s4s-full",
+            "version": "v0.1.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/rui-p-oliveira/s4s-client-full-php.git",
+                "reference": "d6bdd71fc0fdddaeab1427c71161ae8cf5ecb07e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/rui-p-oliveira/s4s-client-full-php/zipball/d6bdd71fc0fdddaeab1427c71161ae8cf5ecb07e",
+                "reference": "d6bdd71fc0fdddaeab1427c71161ae8cf5ecb07e",
+                "shasum": ""
+            },
+            "require": {
+                "ext-curl": "*",
+                "ext-json": "*",
+                "ext-mbstring": "*",
+                "php": ">=5.4"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~4.8",
+                "satooshi/php-coveralls": "~1.0",
+                "squizlabs/php_codesniffer": "~2.6"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Swagger\\Client\\": "lib/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "Apache v2"
+            ],
+            "authors": [
+                {
+                    "name": "Swagger and contributors",
+                    "homepage": "https://github.com/swagger-api/swagger-codegen"
+                }
+            ],
+            "homepage": "http://swagger.io",
+            "keywords": [
+                "api",
+                "php",
+                "sdk",
+                "swagger"
+            ],
+            "time": "2016-08-18 10:16:52"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": [],
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": []
+}
