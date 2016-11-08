@@ -12,14 +12,14 @@
 
 <script>
     var s4s = s;
-    s4s.setup("<place your tenantId here>"); 
+    s4s.setup("<place your tenantId here>");
 
 /**
-    s4s.setup("AAAAAAAAAAE"); 
+    s4s.setup("AAAAAAAAAAE");
     s4s.setHost("https://api.saas4saas.com");
 */
 /**
-    s4s.setup("AAAAAAAAAAU"); 
+    s4s.setup("AAAAAAAAAAU");
     s4s.setHost("http://localhost:8080");
 */
 </script>
