@@ -12,20 +12,20 @@ if (array_key_exists("s4s-error", $_GET) && $_GET["s4s-error"] == true) {
 
 // to be sure that token is real lets got to user check it
 $apiClient = new \Swagger\Client\ApiClient();
-//$apiClient->getConfig()->setHost('localhost:8080');
+$apiClient->getConfig()->setHost('http://staging.api.saas4saas.com');
 $userApi = new \Swagger\Client\Api\SsUserApi($apiClient);
 
 $user = $userApi->authenticate($_GET["s4s-token"]);
-var_dump($user->getAccountId());
-if ($user->getAccountId() == $_GET["s4s-account-id"] && $user->getId() == $_GET["s4s-user-id"]){
+var_dump($user);
+if ($user->getAccountId() == $_GET["s4s-account-id"] && $user->getUserId() == $_GET["s4s-user-id"]){
     $_SESSION["s4sToken"] = $_GET["s4s-token"];
     $_SESSION["s4sUserId"] = $_GET["s4s-user-id"];
     $_SESSION["s4sAccountId"] = $_GET["s4s-account-id"];
-    $_SESSION["s4sData"] = $user->getData();
     
+
     if (array_key_exists("s4sAccountId", $_SESSION)) {
         //setcookie("s4s-session", json_encode(["token" => $_SESSION["s4sToken"], "accountId" => $_SESSION["s4sAccountId"], "userId" => $_SESSION["s4sUserId"]]));
-        header('Location: /app.php');
+        header('Location: /app/app.php');
         die;
     }
 }

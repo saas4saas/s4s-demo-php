@@ -4,7 +4,7 @@
 session_start();
 //setcookie("s4s-session", json_encode([]));
 if (! array_key_exists("s4sToken", $_SESSION)) {
-    header('Location: /login.php');
+    header('Location: /');
     die;
 }
 
